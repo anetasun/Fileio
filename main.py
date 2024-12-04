@@ -38,7 +38,7 @@ def upload():
 
 
 def show_history():
-    if not os.path.exists(history_file)
+    if not os.path.exists(history_file):
         mb.showinfo("История", "история загрузок пуста")
         return
 
@@ -70,7 +70,7 @@ entry = ttk.Entry()
 entry.pack()
 
 
-history_button = ttk.Button(app, text="Показать Историю", command=show_history)
+history_button = ttk.Button(text="Показать Историю", command=show_history)
 history_button.pack()
 
 window.mainloop()
